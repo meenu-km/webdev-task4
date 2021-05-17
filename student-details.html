@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>studentdetails</title>
+  </head>
+  <body>
+    <h1>Student Details</h1>
+    <script>
+      let student = {
+        name: "John",
+        Age: 15,
+        class: 10,
+        Division: "A",
+        markofsub1: 24,
+        markofsub2: 22,
+        markofsub3: 25,
+        markofsub4: 23,
+        markofsub5: 21,
+        totalmark: function () {
+          let total =
+            this.markofsub1 +
+            this.markofsub2 +
+            this.markofsub3 +
+            this.markofsub4 +
+            this.markofsub5;
+          return total;
+          console.log(total);
+        },
+      };
+      let mark = student.totalmark();
+      console.log(mark);
+      let a = mark / 5;
+      console.log(a);
+    </script>
+  </body>
+</html>
